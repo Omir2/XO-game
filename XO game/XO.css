@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.game{
+    width: 300px;
+    color: rgb(255, 255, 255);
+    margin: auto;   
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.title{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-top:50%;
+    margin-left: 5px;
+    width: 290px;
+}
+span{
+    font-family:initial;
+    color: rgb(31, 102, 22);
+}
+
+/* المهم*/
+.square{
+    color: white;
+    height: 100px;
+    width: 90px;
+    height: 90px;
+    /*flot بتنظم المساحات على حسب المساحة العامة*/
+    float: left;
+    margin: 5px;
+    font-size: 65px;
+    border: 4px groove white;
+    box-sizing: border-box;
+}
+
+.square:hover{
+    cursor: pointer;
+    transform: scale(0.9);  
+    transition: 0.2s;
+    background-color: rgba(0, 128, 0, 0.322);
+
+}
+
+
+
+
+
+
+button {
+    margin-top: 20px;
+    --glow-color: rgba(255, 255, 255, 0.5);
+    --glow-spread-color: rgba(77, 115, 138, 0.979);
+    --enhanced-glow-color: rgba(81, 142, 150, 0.753);
+    --btn-color: rgba(62, 145, 148, 0.226);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
